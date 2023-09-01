@@ -50,22 +50,28 @@ The interface is created with an html template (templates folder), css styles an
 ### Start page
 
 The user has three fields to fill in.
-![start1](Screens/start_page.png)
+
+![start1](Screens/start_page.PNG)
 
 After hitting PROCEED button, inserted values are preserved and a LOADING message pops up.
-![start2](Screens/start_page_click.png)
+
+![start2](Screens/start_page_click.PNG)
 
 ### Results
 
 Outputs are shown in a list, with the offer name, price and link to it.
-![res1](Screens/results.png)
-![res2](Screens/results_2.png)
+
+![res1](Screens/results.PNG)
+
+![res2](Screens/resutls_2.PNG)
 
 As mentioned before, email with a summary is also sent.
-![res3](Screens/email.png)
+
+![res3](Screens/email.PNG)
 
 In case there are no results for both pages, relevant message is displayed instead.
-![res4](Screens/no_results.png)
+
+![res4](Screens/no_results.PNG)
 
 
 ---
