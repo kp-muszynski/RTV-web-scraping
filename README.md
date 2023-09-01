@@ -65,7 +65,7 @@ Outputs are shown in a list, with the offer name, price and link to it.
 
 ![res2](Screens/resutls_2.PNG)
 
-As mentioned before, email with a summary is also sent.
+As mentioned before, email with a summary is also sent to the user.
 
 ![res3](Screens/email.PNG)
 
