@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <title>RTV finder</title>
+</head>
+<body>
+<div class="container">
+  <h1> RTV Product finder </h1>
+  <form class="input-form" method='POST'>
+      <p>Enter the exact name (case sensitive) of the product:</p>
+      <input class="input-box" placeholder='Robot sprzątający Xiaomi Mi Robot Vacuum Mop 2 Pro' value="{{product}}" name='product-name'>
+      <p>Enter the maximum price:</p>
+      <input class="input-box price-input" placeholder='1800' value="{{price_max}}" name='price-name'>
+      <p>Please provide your email address:</p>
+      <input class="input-box email-input" placeholder='example@gmail.com' value="{{email}}" name='email-name'>
+      <button class="btn">Proceed</button>
+  </form>
+    <div class="loading hidden"> Loading... </div>
+    <div class="results-box{{status}}">
+    <h2>Results:</h2>
+        <ul>
+            <li class="results-list">
+                <div class="results-header">
+                    <p> <u>RTV EURO AGD</u> <br> Offer name: {{results_rtv[0]}}</p>
+                    <p> <b>Price: {{results_rtv[1]}}</b> </p>
+                </div>
+                <a class="source"
+                  href={{results_rtv[2]}}
+                  target="_blank">Link</a>
+            </li>
+            <li class="results-list">
+                <div class="results-header">
+                    <p> <u>Media Expert</u> <br> Offer name: {{results_media[0]}}</p>
+                    <p> <b>Price: {{results_media[1]}}</b> </p>
+                </div>
+                <a class="source"
+                  href={{results_media[2]}}
+                  target="_blank">Link</a>
+            </li>
+        </ul>
+
+    <h3>{{final_text}}</h3>
+    </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
